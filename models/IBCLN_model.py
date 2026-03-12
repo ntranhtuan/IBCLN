@@ -162,7 +162,8 @@ class IBCLNModel(BaseModel, torch.nn.Module):
         self.t_c = self.get_c()
         self.r_h = self.get_c()
         self.r_c = self.get_c()
-        self.fake_T = torch.tensor(self.real_I)
+        #self.fake_T = torch.tensor(self.real_I)
+        self.fake_T = self.real_I.clone()
         self.fake_Ts = [self.fake_T]
         self.fake_R = torch.ones_like(self.real_I) * 0.1
         self.fake_Rs = [self.fake_R]
