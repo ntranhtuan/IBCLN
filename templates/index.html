@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBCLN Shadow Removal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .preview { margin-top: 20px; }
+        img { max-width: 45%; height: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+<h1>IBCLN Shadow Removal Demo</h1>
+<form method="POST" enctype="multipart/form-data">
+    <label for="image">Select an image with shadows:</label>
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Process</button>
+</form>
+
+{% if input_image and result_image %}
+    <div class="preview">
+        <h2>Input / Output</h2>
+        <img src="{{ input_image }}" alt="uploaded image">
+        <img src="{{ result_image }}" alt="processed result">
+    </div>
+{% endif %}
+
+</body>
+</html>
