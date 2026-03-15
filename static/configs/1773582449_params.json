@@ -1,0 +1,12 @@
+{
+  "preprocess": "method3_crop",
+  "n_iter": 3,
+  "score": 24.808956375428206,
+  "metrics": {
+    "total": 24.808956375428206,
+    "contrast": 43.362126653333206,
+    "sharpness": 9.746452993811525,
+    "detail": 0.303268585810296,
+    "color_var": 44.07864382061363
+  },
+  "image": 
