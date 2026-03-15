@@ -20,8 +20,8 @@
 {% if input_image and result_image %}
     <div class="preview">
         <h2>Input / Output</h2>
-        <img src="{{ input_image }}" alt="uploaded image">
-        <img src="{{ result_image }}" alt="processed result">
+        <img src="{{ url_for('static', filename=input_image) }}" alt="uploaded image">
+        <img src="{{ url_for('static', filename=result_image) }}" alt="processed result">
     </div>
 {% endif %}
 
